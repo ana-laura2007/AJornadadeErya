@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(0, 48, 73); /* Tom mais escuro, remetendo a magia e mistério */
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 100px;
+}
+
+button {
+    background-color: rgb(15, 76, 129); /* Azul profundo para representar seriedade */
+    color: white;
+    border: 2px solid #ffca3a; /* Acento dourado */
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 80%;
+   
+    padding: 20px;
+    border-radius: 15px;
+   
+}
+
+img {
+    max-width: 50%;
+    border: 4px solid #ffca3a; /* Moldura dourada para destacar as imagens */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 202, 58, 0.7); /* Brilho dourado ao redor da imagem */
+}
+
+.fim {
+    font-size: 150px;
+    color: #ffca3a; /* Dourado para um final impactante */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-proximo {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 600;
+    color: #003049; /* Tom profundo de azul, forte contraste */
+    background-color: #ffca3a; /* Dourado que remete à magia e poder */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-proximo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-proximo:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-proximo::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-proximo::after {
+    background-color: #f9a828; /* Acento de luz mágica */
+}
+
+.btn-proximo:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
